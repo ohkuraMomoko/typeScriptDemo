@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- tsconfig.json設定改"module": "es2015", 瀏覽器可吃es2015 -->
+    <script type="module">
+        import Employee, { projectName } from './js/06_export.js';
+        let emp = new Employee(123, 'n');
+        console.log(emp.getInfo());
+        console.log(projectName);
+    </script>
+    <h1>demo</h1>
+</body>
+
+</html>
